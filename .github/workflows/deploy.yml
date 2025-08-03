@@ -76,12 +76,12 @@ jobs:
         echo "Deploying to staging environment with Docker..."
         # Create environment file for staging
         cat > .env << EOF
-        DB_HOST=${{ secrets.STAGING_DB_HOST }}
-        DB_NAME=${{ secrets.STAGING_DB_NAME }}
-        DB_USERNAME=${{ secrets.STAGING_DB_USERNAME }}
-        DB_PASSWORD=${{ secrets.STAGING_DB_PASSWORD }}
-        DB_PORT=${{ secrets.STAGING_DB_PORT }}
-        JWT_SECRET_KEY=${{ secrets.STAGING_JWT_SECRET_KEY }}
+        DB_HOST=${{ secrets.DB_HOST }}
+        DB_NAME=${{ secrets.DB_NAME }}
+        DB_USERNAME=${{ secrets.DB_USERNAME }}
+        DB_PASSWORD=${{ secrets.DB_PASSWORD }}
+        DB_PORT=${{ secrets.DB_PORT }}
+        JWT_SECRET_KEY=${{ secrets.JWT_SECRET_KEY }}
         DOCKER_IMAGE=${{ secrets.DOCKER_USERNAME }}/rbac-api:develop
         EOF
         
