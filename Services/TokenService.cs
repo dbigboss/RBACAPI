@@ -21,7 +21,7 @@ public class TokenService : ITokenService
     public async Task<string> GenerateTokenAsync(ApplicationUser user)
     {
         var jwtSettings = _configuration.GetSection("JwtSettings");
-        var secretKey = jwtSettings["SecretKey"];
+        var secretKey = _configuration["JwtSettings:SecretKey"];
         var issuer = jwtSettings["Issuer"];
         var audience = jwtSettings["Audience"];
         var expiryInHours = int.Parse(jwtSettings["ExpiryInHours"]!);
