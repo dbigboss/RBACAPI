@@ -1,0 +1,77 @@
+# Build artifacts
+**/bin
+**/obj
+**/out
+**/publish
+
+# Development files
+.vs/
+.vscode/
+*.user
+*.sln.docstates
+.idea/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Docker
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Documentation
+README.md
+*.md
+docs/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node.js (if any)
+node_modules/
+npm-debug.log*
+
+# Test results
+TestResults/
+coverage/
+*.trx
+*.coverage
+*.coveragexml
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets and sensitive files
+appsettings.Development.json
+appsettings.*.json
+!appsettings.json
+
+# GitHub
+.github/
+
+# Other common excludes
+*.swp
+*~
