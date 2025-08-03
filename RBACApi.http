@@ -1,0 +1,6 @@
+@RBACApi_HostAddress = http://localhost:5197
+
+GET {{RBACApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
