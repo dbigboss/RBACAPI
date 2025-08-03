@@ -109,11 +109,11 @@ builder.Configuration.AddJsonFile("appsettings.json", false, true).AddEnvironmen
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+// if (app.Environment.IsDevelopment())
+// {
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+// }
 
 // Add global exception handling middleware (should be one of the first middleware)
 app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
